@@ -3,7 +3,7 @@
 | 항목 | 내용 |
 |---|---|
 | 앱 | 휴대폰에서 보낸 짐을 Pleos에서 3D로 배치·저장 |
-| 제출 APK | [trunk-planner_트렁크플래너_release.apk](apk/trunk-planner_트렁크플래너_release.apk) |
+| 제출 APK | [트렁크플래너_release.apk](apk/트렁크플래너_release.apk) |
 | 시험 환경 | Pleos Connect v2.1.0 · Android Automotive 34 · ARM64 · 2560 × 1440 |
 | APK 구분 | 시험 서명 · 차량 단독 실행 · 웹 연동 비활성 |
 | 웹 연동 시연 | 별도 `demoLocalDebug` APK · Chrome · 로컬 PostgreSQL |
@@ -15,7 +15,7 @@
 ```bash
 adb devices
 export PLEOS_SERIAL=emulator-5554  # adb devices에 표시된 Pleos 번호로 교체
-adb -s "$PLEOS_SERIAL" install -r "apk/trunk-planner_트렁크플래너_release.apk"
+adb -s "$PLEOS_SERIAL" install -r "apk/트렁크플래너_release.apk"
 adb -s "$PLEOS_SERIAL" shell am start -n ai.cargo.planner/ai.cargo.planner.MainActivity
 ```
 
