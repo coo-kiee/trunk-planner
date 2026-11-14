@@ -1,0 +1,13 @@
+{
+  "old": {
+    "x": 12,
+    "y": 56,
+    "z": 34
+  },
+  "new": {
+    "x": 12,
+    "y": 34,
+    "z": 56
+  },
+  "rule": "v0 y-depth/z-height -> v1 y-height/z-depth; legacy origin requires explicit frame provenance; no silent handedness inference"
+}

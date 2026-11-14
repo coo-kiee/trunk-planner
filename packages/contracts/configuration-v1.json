@@ -1,0 +1,11 @@
+{
+  "revision": 1, "engineVersion": "aabb-mm-v1", "units": "integer_mm",
+  "coordinateFrame": "origin=opening floor vehicle right; +x=vehicle left; +y=up; +z=vehicle front/inward; right-handed",
+  "inputDimensionMaxMm": 10000, "coordinateAbsMaxMm": 10000,
+  "maxInstances": 100, "maxProxyBoxesPerItem": 16,
+  "maximumBoxVolumeMm3": 1000000000000, "arithmetic": "Kotlin Long products; no Int multiplication",
+  "marginMm": 0, "supportRatioBasisPoints": 10000,
+  "rationale": "Full projected support is a provisional conservative geometry policy; zero extra margin isolates measured error. Neither is a load securing or safety standard.",
+  "pairingTtlSeconds": 300, "draftTtlSeconds": 86400, "ackTtlSeconds": 86400,
+  "proofBoundary": "single box / static AABB / permitted 24 orientations / collision only; support and L/multi-item are uncertified"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Separate OS process: the controller kills this one and keeps running to inspect the database. -->
+        <service android:name="ai.cargo.data.WriterService" android:process=":writer" android:exported="false" />
+    </application>
+</manifest>

@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application
+        android:networkSecurityConfig="@xml/demo_local_network"
+        tools:ignore="UnusedAttribute">
+        <!-- Only in this variant: seeds real Room data through the real judge for acceptance checks. -->
+        <receiver android:name=".DemoSeedReceiver" android:exported="true" android:permission="android.permission.DUMP">
+            <intent-filter><action android:name="ai.cargo.planner.DEMO_SEED" /></intent-filter>
+        </receiver>
+    </application>
+</manifest>

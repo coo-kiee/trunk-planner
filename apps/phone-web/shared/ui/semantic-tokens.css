@@ -1,0 +1,14 @@
+/* Semantic aliases over the generated tokens. No literal values: changing a generated token changes these too. */
+:root {
+  --cargo-status-pending: var(--cargo-color-unverified);
+  --cargo-status-sending: var(--cargo-color-accent);
+  --cargo-status-received: var(--cargo-color-uncertain);
+  --cargo-status-accepted: var(--cargo-color-clear);
+  --cargo-status-conflict: var(--cargo-color-conflict);
+  --cargo-status-stale: var(--cargo-color-stale);
+  --cargo-status-unverified: var(--cargo-color-unverified);
+  --cargo-status-clear: var(--cargo-color-clear);
+  --cargo-type-small: calc(var(--cargo-type-body) * 0.84);
+  --cargo-touch-target: calc(var(--cargo-spacing-large) * 2);
+  --cargo-hairline: 1px;
+}

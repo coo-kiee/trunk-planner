@@ -1,0 +1,34 @@
+{
+  "name": "@cargo/phone-web",
+  "private": true,
+  "version": "0.1.0",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "generate:validator": "node tools/generate-validator.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "node tools/generate-validator.mjs && node --test tests/unit/*.test.ts tests/unit/*.test.mjs",
+    "build": "node tools/run-build.mjs",
+    "start": "next start",
+    "start:tls": "node tools/local-tls.mjs",
+    "test:e2e": "node tools/e2e/run.mjs",
+    "check:ds": "node tools/check-screen-ds.mjs",
+    "report": "node tools/build-report.mjs"
+  },
+  "dependencies": {
+    "@cargo/contracts": "file:../../packages/contracts",
+    "@cargo/design-tokens": "file:../../packages/design-tokens",
+    "next": "16.4.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "ajv": "8.17.1",
+    "jsqr": "1.4.0",
+    "playwright-core": "1.64.1",
+    "qrcode": "1.5.4",
+    "typescript": "5.7.3"
+  }
+}

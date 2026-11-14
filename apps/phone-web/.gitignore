@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.local-tls/
+.e2e-tmp/
+next-env.d.ts
+tsconfig.tsbuildinfo
+shared/contracts/item-draft-validator.generated.js

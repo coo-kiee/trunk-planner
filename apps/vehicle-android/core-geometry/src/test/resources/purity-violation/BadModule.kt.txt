@@ -1,0 +1,4 @@
+package bad
+import android.content.Context
+import java.io.File
+fun now() = System.currentTimeMillis()

@@ -1,0 +1,13 @@
+{
+  "name": "@cargo/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/ts/index.js",
+  "types": "dist/ts/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "ajv": "8.17.1"
+  }
+}

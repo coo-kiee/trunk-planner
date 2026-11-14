@@ -1,0 +1,12 @@
+/* Page frame only. Components carry their own tokens through shared/ui. */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--cargo-color-background);
+  color: var(--cargo-color-text);
+  font-family: system-ui, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  font-size: var(--cargo-type-body);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}

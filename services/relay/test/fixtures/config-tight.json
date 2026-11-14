@@ -1,0 +1,19 @@
+{
+  "relayConfigVersion": 9003,
+  "profile": "test",
+  "contractsConfigurationRevision": 1,
+  "credentialTtlSeconds": 86400,
+  "consentVersions": ["transfer-consent-v1"],
+  "limits": {
+    "claimBodyBytes": 1024, "ackBodyBytes": 4096, "draftJsonBodyBytes": 65536,
+    "photoDecodedBytes": 4096, "photoMaxDimensionPx": 2048, "photoMimeAllowlist": ["image/jpeg", "image/webp"],
+    "maxActiveDraftsPerPairing": 3, "maxDraftRowsPerPairing": 6, "maxActiveBytesPerPairing": 6000,
+    "maxActivePairings": 4, "listPageMax": 2
+  },
+  "rateLimit": {
+    "createPairing": { "capacity": 8, "refillPerMinute": 1 },
+    "claim": { "capacity": 8, "refillPerMinute": 1 },
+    "authenticated": { "capacity": 40, "refillPerMinute": 1 }
+  },
+  "cleanup": { "intervalSeconds": 3600, "batchSize": 100 }
+}

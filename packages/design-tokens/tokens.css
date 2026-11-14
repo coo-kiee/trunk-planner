@@ -1,0 +1,19 @@
+/* Generated from tokens.json */
+:root {
+  --cargo-color-background: #101B2B;
+  --cargo-color-surface: #1B2B41;
+  --cargo-color-text: #F1F5F9;
+  --cargo-color-accent: #5BC8FF;
+  --cargo-color-clear: #38C98B;
+  --cargo-color-conflict: #EF6973;
+  --cargo-color-uncertain: #F4BD50;
+  --cargo-color-unverified: #9CAFC5;
+  --cargo-color-stale: #BC95EF;
+  --cargo-color-selected: #5BC8FF;
+  --cargo-color-item: #7FA2CE;
+  --cargo-spacing-small: 8px;
+  --cargo-spacing-medium: 16px;
+  --cargo-spacing-large: 24px;
+  --cargo-type-body: 18px;
+  --cargo-type-title: 26px;
+}

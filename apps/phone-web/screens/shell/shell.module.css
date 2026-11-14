@@ -1,0 +1,24 @@
+/* Layout only, from tokens. Width caps are multiples of the spacing token, so a token change moves them too. */
+.page {
+  display: grid;
+  gap: var(--cargo-spacing-medium);
+  width: 100%;
+  max-width: calc(var(--cargo-spacing-large) * 30);
+  margin: 0 auto;
+  padding: var(--cargo-spacing-medium);
+}
+.appTitle { margin: 0; font-size: var(--cargo-type-title); line-height: 1.25; }
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--cargo-spacing-small); }
+.stack { display: grid; gap: var(--cargo-spacing-medium); min-width: 0; }
+.tight { display: grid; gap: var(--cargo-spacing-small); min-width: 0; }
+.row { display: flex; flex-wrap: wrap; gap: var(--cargo-spacing-small); }
+.row > * { flex: 1 1 auto; }
+.triple { display: grid; grid-template-columns: repeat(auto-fit, minmax(calc(var(--cargo-spacing-large) * 4), 1fr)); gap: var(--cargo-spacing-small); }
+.text { margin: 0; overflow-wrap: anywhere; }
+.small { margin: 0; font-size: var(--cargo-type-small); color: var(--cargo-color-unverified); overflow-wrap: anywhere; }
+.list { margin: 0; padding-left: var(--cargo-spacing-medium); display: grid; gap: var(--cargo-spacing-small); }
+.preview { display: block; max-width: 100%; max-height: calc(var(--cargo-spacing-large) * 10); height: auto; border-radius: var(--cargo-spacing-small); }
+.facts { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--cargo-spacing-small); margin: 0; }
+.fact { min-width: 0; }
+.factName { font-size: var(--cargo-type-small); color: var(--cargo-color-unverified); }
+.factValue { margin: 0; overflow-wrap: anywhere; }

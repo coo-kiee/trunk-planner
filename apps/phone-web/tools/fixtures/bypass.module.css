@@ -1,0 +1,2 @@
+/* Negative fixture for the DS check: literal colours, spacing and type must be reported. */
+.bad { color: #ff0000; background: rgb(1, 2, 3); padding: 13px; font-size: 21px; gap: var(--cargo-color-not-a-token); }
